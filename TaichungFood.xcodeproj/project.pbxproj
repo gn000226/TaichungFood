@@ -13,6 +13,11 @@
 		1222EA3725764A0100736679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1222EA3525764A0100736679 /* Main.storyboard */; };
 		1222EA3925764A0200736679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1222EA3825764A0200736679 /* Assets.xcassets */; };
 		1222EA3C25764A0200736679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1222EA3A25764A0200736679 /* LaunchScreen.storyboard */; };
+		1222EA4525764BF600736679 /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222EA4425764BF600736679 /* Foods.swift */; };
+		1222EA522576898100736679 /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222EA512576898100736679 /* LocationTableViewController.swift */; };
+		1222EA55257689B400736679 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222EA54257689B400736679 /* LocationTableViewCell.swift */; };
+		1222EA582576BFFF00736679 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222EA572576BFFF00736679 /* MapViewController.swift */; };
+		1222EA5F2577A01900736679 /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1222EA5E2577A01900736679 /* FoodDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1222EA3825764A0200736679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1222EA3B25764A0200736679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1222EA3D25764A0200736679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1222EA4425764BF600736679 /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
+		1222EA512576898100736679 /* LocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
+		1222EA54257689B400736679 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		1222EA572576BFFF00736679 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1222EA5E2577A01900736679 /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +66,15 @@
 		1222EA2E25764A0100736679 /* TaichungFood */ = {
 			isa = PBXGroup;
 			children = (
+				1222EA5E2577A01900736679 /* FoodDetailViewController.swift */,
 				1222EA2F25764A0100736679 /* AppDelegate.swift */,
 				1222EA3125764A0100736679 /* SceneDelegate.swift */,
 				1222EA3325764A0100736679 /* ViewController.swift */,
 				1222EA3525764A0100736679 /* Main.storyboard */,
+				1222EA572576BFFF00736679 /* MapViewController.swift */,
+				1222EA54257689B400736679 /* LocationTableViewCell.swift */,
+				1222EA512576898100736679 /* LocationTableViewController.swift */,
+				1222EA4425764BF600736679 /* Foods.swift */,
 				1222EA3825764A0200736679 /* Assets.xcassets */,
 				1222EA3A25764A0200736679 /* LaunchScreen.storyboard */,
 				1222EA3D25764A0200736679 /* Info.plist */,
@@ -138,8 +153,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1222EA3425764A0100736679 /* ViewController.swift in Sources */,
+				1222EA55257689B400736679 /* LocationTableViewCell.swift in Sources */,
+				1222EA4525764BF600736679 /* Foods.swift in Sources */,
+				1222EA5F2577A01900736679 /* FoodDetailViewController.swift in Sources */,
+				1222EA522576898100736679 /* LocationTableViewController.swift in Sources */,
 				1222EA3025764A0100736679 /* AppDelegate.swift in Sources */,
 				1222EA3225764A0100736679 /* SceneDelegate.swift in Sources */,
+				1222EA582576BFFF00736679 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

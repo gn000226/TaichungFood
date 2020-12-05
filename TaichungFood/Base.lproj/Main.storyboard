@@ -1,24 +1,276 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NFA-g5-bpe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Food Detail View Controller-->
+        <scene sceneID="PeD-t9-34k">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="FoodDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jlc-ry-fuF" customClass="FoodDetailViewController" customModule="TaichungFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jgt-Bu-5Dh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="RpJ-al-pF9">
+                                <rect key="frame" x="50" y="194" width="314" height="203"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店名" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyv-n4-u2q">
+                                        <rect key="frame" x="124.5" y="0.0" width="65" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電話" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDw-8B-9vl">
+                                        <rect key="frame" x="128.5" y="64.5" width="57" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="區域" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBj-9e-EX7">
+                                        <rect key="frame" x="132.5" y="124" width="49" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNg-5I-k84">
+                                        <rect key="frame" x="136.5" y="179" width="41" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zk-Va-ohc">
+                                <rect key="frame" x="50" y="547" width="120" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="oGf-XP-950"/>
+                                    <constraint firstAttribute="height" constant="48" id="s6e-P7-CdX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="播打電話">
+                                    <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="callTel:" destination="Jlc-ry-fuF" eventType="touchUpInside" id="mxR-NN-8AW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50Q-Gy-foi">
+                                <rect key="frame" x="244" y="547" width="120" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="g6x-gG-rXd"/>
+                                    <constraint firstAttribute="height" constant="48" id="ghg-nL-W85"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="kG2-KX-N4Y"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="pwh-Vy-R8g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="顯示位置">
+                                    <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="toMapView:" destination="Jlc-ry-fuF" eventType="touchUpInside" id="tQ1-0F-i0p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rQL-Q1-4aH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="50Q-Gy-foi" firstAttribute="top" secondItem="RpJ-al-pF9" secondAttribute="bottom" constant="150" id="ESk-m3-jsZ"/>
+                            <constraint firstItem="rQL-Q1-4aH" firstAttribute="trailing" secondItem="50Q-Gy-foi" secondAttribute="trailing" constant="50" id="Hte-nQ-3E6"/>
+                            <constraint firstItem="7Zk-Va-ohc" firstAttribute="leading" secondItem="rQL-Q1-4aH" secondAttribute="leading" constant="50" id="chN-v2-dMJ"/>
+                            <constraint firstItem="7Zk-Va-ohc" firstAttribute="top" secondItem="RpJ-al-pF9" secondAttribute="bottom" constant="150" id="eeq-UE-AbC"/>
+                            <constraint firstItem="RpJ-al-pF9" firstAttribute="leading" secondItem="rQL-Q1-4aH" secondAttribute="leading" constant="50" id="je1-T4-huC"/>
+                            <constraint firstItem="RpJ-al-pF9" firstAttribute="top" secondItem="rQL-Q1-4aH" secondAttribute="top" constant="150" id="nDi-Kg-Vg1"/>
+                            <constraint firstItem="rQL-Q1-4aH" firstAttribute="trailing" secondItem="RpJ-al-pF9" secondAttribute="trailing" constant="50" id="xi2-0h-k7h"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="468-eb-Idm"/>
+                    <connections>
+                        <outlet property="callTelephone" destination="7Zk-Va-ohc" id="xb3-Mw-sct"/>
+                        <outlet property="lbAddress" destination="eNg-5I-k84" id="tlO-DM-nbG"/>
+                        <outlet property="lbArea" destination="UBj-9e-EX7" id="uGd-Zo-Lte"/>
+                        <outlet property="lbName" destination="Hyv-n4-u2q" id="shS-8c-pX1"/>
+                        <outlet property="lbPhone" destination="FDw-8B-9vl" id="at0-lP-iZs"/>
+                        <outlet property="view" destination="jgt-Bu-5Dh" id="PR1-KO-9DN"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APF-Zf-vBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2192.753623188406" y="97.767857142857139"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="R8k-AW-ZPU">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" modalPresentationStyle="fullScreen" id="W5e-1U-bDe" customClass="MapViewController" customModule="TaichungFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OlV-qp-FXZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4sB-M1-1M6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WcM-Zs-6K5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WcM-Zs-6K5" firstAttribute="bottom" secondItem="4sB-M1-1M6" secondAttribute="bottom" id="0Qv-Bt-sN0"/>
+                            <constraint firstItem="WcM-Zs-6K5" firstAttribute="trailing" secondItem="4sB-M1-1M6" secondAttribute="trailing" id="5q0-Zu-0G2"/>
+                            <constraint firstItem="4sB-M1-1M6" firstAttribute="top" secondItem="WcM-Zs-6K5" secondAttribute="top" id="Sei-3d-yww"/>
+                            <constraint firstItem="4sB-M1-1M6" firstAttribute="leading" secondItem="WcM-Zs-6K5" secondAttribute="leading" id="ynl-Qa-oSS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CMe-th-ze8"/>
+                    <connections>
+                        <outlet property="foodMapView" destination="4sB-M1-1M6" id="v3G-1i-0eG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BLa-eh-o28" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2941" y="105"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="xzp-lH-zzp">
+            <objects>
+                <tableViewController storyboardIdentifier="LocationTableViewController" id="omd-Dc-5my" customClass="LocationTableViewController" customModule="TaichungFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="28" id="Y80-hL-lIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="gxf-dn-90J">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" placeholder="搜尋店家" id="QVf-q3-Yea">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taichung" translatesAutoresizingMaskIntoConstraints="NO" id="yxS-ZE-OJi">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="SsR-8d-LB8"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="yxS-ZE-OJi" firstAttribute="trailing" secondItem="QVf-q3-Yea" secondAttribute="trailing" id="1cb-x6-Fsr"/>
+                                <constraint firstItem="yxS-ZE-OJi" firstAttribute="top" secondItem="QVf-q3-Yea" secondAttribute="bottom" id="J7i-MO-ahs"/>
+                                <constraint firstItem="yxS-ZE-OJi" firstAttribute="leading" secondItem="QVf-q3-Yea" secondAttribute="leading" id="Y3M-6x-yhV"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" restorationIdentifier="LocationTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="LocationTableViewCell" id="zBJ-wj-It2" customClass="LocationTableViewCell" customModule="TaichungFood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="68"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zBJ-wj-It2" id="0Al-pv-bdl">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wub-wN-mhi">
+                                            <rect key="frame" x="200" y="15" width="82" height="38"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="台中名產" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Th-dH-0Zi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="5Th-dH-0Zi" secondAttribute="trailing" id="9LE-2a-EGC"/>
+                                                <constraint firstItem="5Th-dH-0Zi" firstAttribute="leading" secondItem="Wub-wN-mhi" secondAttribute="leading" id="MU3-5a-n7g"/>
+                                                <constraint firstItem="5Th-dH-0Zi" firstAttribute="top" secondItem="Wub-wN-mhi" secondAttribute="top" id="iv4-Al-USd"/>
+                                                <constraint firstAttribute="bottom" secondItem="5Th-dH-0Zi" secondAttribute="bottom" id="mO5-NQ-75a"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Wub-wN-mhi" firstAttribute="top" secondItem="0Al-pv-bdl" secondAttribute="top" constant="15" id="DzI-2t-tOr"/>
+                                        <constraint firstAttribute="bottom" secondItem="Wub-wN-mhi" secondAttribute="bottom" constant="15" id="du2-d3-rNa"/>
+                                        <constraint firstItem="Wub-wN-mhi" firstAttribute="centerX" secondItem="0Al-pv-bdl" secondAttribute="centerX" id="jTt-4x-7AJ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="nil" keyPath=""/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="lbName" destination="5Th-dH-0Zi" id="sj1-rk-QjF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="omd-Dc-5my" id="66E-UZ-Xeg"/>
+                            <outlet property="delegate" destination="omd-Dc-5my" id="LAe-yw-yHX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="vxj-g7-tY6"/>
+                    <connections>
+                        <outlet property="headView" destination="gxf-dn-90J" id="OFI-Mi-Z3l"/>
+                        <outlet property="headerImageView" destination="yxS-ZE-OJi" id="Xik-q5-Cc4"/>
+                        <outlet property="searchBar" destination="QVf-q3-Yea" id="NkH-gS-W9s"/>
+                        <outlet property="tableView" destination="Y80-hL-lIQ" id="VJy-vb-zYf"/>
+                        <outlet property="tableViewVC" destination="Y80-hL-lIQ" id="bw6-8A-c3l"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KMR-nh-KJ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298.5507246376812" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W9g-WX-kkO">
+            <objects>
+                <navigationController id="NFA-g5-bpe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oNy-qa-ycD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="omd-Dc-5my" kind="relationship" relationship="rootViewController" id="3xC-IO-00v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4c-7H-cSD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="409" y="98"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="taichung" width="1000" height="667"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
