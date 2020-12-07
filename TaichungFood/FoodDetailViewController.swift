@@ -14,6 +14,8 @@ class FoodDetailViewController: UIViewController {
     @IBOutlet weak var lbAddress: UILabel!
     @IBOutlet weak var callTelephone: UIButton!
     
+    @IBOutlet weak var btMap: UIButton!
+    @IBOutlet weak var btTel: UIButton!
     /* 接上頁傳過來的值 **/
     var foodDetail: food!
     
@@ -26,6 +28,17 @@ class FoodDetailViewController: UIViewController {
         self.lbAddress.textColor = #colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1)
         self.title = foodDetail.name
         setBackground()
+        
+        setshadow(_button: btTel)
+        setshadow(_button: btMap)
+    }
+    
+    /* 顯示Bt陰影設定 */
+    func setshadow(_button: UIButton) {
+        /* 陰影設定 > 不透明度 **/
+        _button.layer.shadowOpacity = 0.1
+        /* 陰影設定 > 位置 **/
+        _button.layer.shadowOffset = CGSize(width: 2, height: 3)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -100,6 +113,7 @@ class FoodDetailViewController: UIViewController {
         let gradient = CAGradientLayer()
         gradient.frame = self.view.frame
         gradient.colors = [color9, color8, color8, color8, color8, color7]
+//        view.layer.addSublayer(gradient)
         view.layer.insertSublayer(gradient, at: 0)
     }
     /*
@@ -111,5 +125,4 @@ class FoodDetailViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
 }

@@ -104,6 +104,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="468-eb-Idm"/>
                     <connections>
+                        <outlet property="btMap" destination="50Q-Gy-foi" id="aoC-ub-Igz"/>
+                        <outlet property="btTel" destination="7Zk-Va-ohc" id="2Iu-7B-BwJ"/>
                         <outlet property="callTelephone" destination="7Zk-Va-ohc" id="xb3-Mw-sct"/>
                         <outlet property="lbAddress" destination="eNg-5I-k84" id="tlO-DM-nbG"/>
                         <outlet property="lbArea" destination="UBj-9e-EX7" id="uGd-Zo-Lte"/>

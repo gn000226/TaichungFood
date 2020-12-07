@@ -11,6 +11,7 @@ import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var foodMapView: MKMapView!
+    var foods: [food]?
     var food: food?
     /* 建立CLLocationManager實體 > 定位 > 取得自己的位置 **/
     let locationManager = CLLocationManager()
@@ -78,9 +79,17 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         foodMapView.regionThatFits(region)
     }
     
+    /* didSelect > 撰寫mapView **/
+//    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+//        <#code#>
+//    }
+    
     /* 顯示圖釘對話欄設定 **/
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-      
+        /* user location已經有預設圖示無需給予新的圖示 */
+        if annotation is MKUserLocation {
+            return nil
+        }
         let identifier = "annotation"
         //轉為MKPinAnnotationView
         var annotationView = foodMapView.dequeueReusableAnnotationView(withIdentifier: identifier)
@@ -139,6 +148,10 @@ extension MapViewController {
                 //設定顯示至mapView上面
                 mapView.setRegion(region, animated: true)
         }
+    }
+    
+    func addMaker() {
+        
     }
 }
 
